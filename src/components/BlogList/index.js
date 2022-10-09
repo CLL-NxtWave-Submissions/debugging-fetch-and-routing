@@ -13,7 +13,7 @@ class BlogList extends Component {
     this.getBlogsData()
   }
 
-  getBlogsData =  () => {
+  getBlogsData = async () => {
     const response = await fech('https://apis.ccbp.in/blogs')
     const formattedData = response.map(eachItem => ({
       id: eachItem.id,

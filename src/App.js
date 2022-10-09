@@ -15,11 +15,11 @@ const App = () => (
       <div className="app-body">
         <Header />
         <Switch>
-          <Route component={NotFound} />
           <Route exact path="/" component={Contact} />
           <Route exact path="/abou" component={About} />
           <Route exact path="/contact" component={Home} />
           <Route path="/blogs/id" component={BlogItemDetails} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     </div>

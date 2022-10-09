@@ -15,9 +15,9 @@ const App = () => (
       <div className="app-body">
         <Header />
         <Switch>
-          <Route exact path="/" component={Contact} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/abou" component={About} />
-          <Route exact path="/contact" component={Home} />
+          <Route exact path="/contact" component={Contact} />
           <Route path="/blogs/id" component={BlogItemDetails} />
           <Route component={NotFound} />
         </Switch>

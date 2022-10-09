@@ -31,7 +31,6 @@ class BlogList extends Component {
 
   render() {
     const {blogsData, isLoading} = this.state
-    this.getBlogsData()
 
     return (
       <div className="blogs-list-container">

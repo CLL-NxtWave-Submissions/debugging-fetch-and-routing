@@ -14,7 +14,7 @@ class BlogList extends Component {
   }
 
   getBlogsData = async () => {
-    const response = await fech('https://apis.ccbp.in/blogs')
+    const response = await fetch('https://apis.ccbp.in/blogs')
     const formattedData = response.map(eachItem => ({
       id: eachItem.id,
       title: eachItem.title,

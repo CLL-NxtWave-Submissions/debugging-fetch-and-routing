@@ -23,7 +23,10 @@ class BlogList extends Component {
       author: eachItem.author,
       topic: eachItem.topic,
     }))
-    this.setState({isLoading: false})
+    this.setState({
+      isLoading: false,
+      blogsData: formattedData,
+    })
   }
 
   render() {
